@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'VK Sans Display';
+    src: url('../main/fonts/VK Sans Display Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.news-header-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: -21px;
+}
+.news-header-btn {
+    width: 275px;
+    height: 40px;
+    border-radius: 10px !important;
+    color: white !important;
+    font-family: 'VK Sans Display' !important;
+    letter-spacing: 0.5px !important;
+    font-size: 16px !important;
+    background-color: rgba(78, 54, 226, 0.6) !important;
+}
+.news-header-btn:hover {
+    background-color: rgba(78, 54, 226, 0.87) !important;
+}
+.products-header-btn {
+    width: 250px;
+    height: 56px;
+    margin-bottom: -15px !important;
+    font-size: 15px !important;
+    color: white !important;
+    background-color: rgba(78, 54, 226, 0.6) !important;
+    font-family: 'VK Sans Display' !important;
+    border-radius: 10px !important;
+    letter-spacing: 0.5px !important;
+}
+.products-header-btn:hover {
+    background-color: rgba(78, 54, 226, 0.87) !important;
+    color: white !important;
+}
+.textField-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.textField {
+    width: 100%;
+}
+.textField::before {
+    border-bottom: none !important;
+}
+.textField div::before {
+    border-bottom: none !important;
+}
+.textField div {
+    background-color: rgb(249, 249, 249) !important;
+    border-radius: 10px !important;
+    transition: none !important;
+}
+.textField div::after {
+    border-bottom: red !important;
+}
+.textField label {
+    font-family: 'VK Sans Display' !important;
+    cursor: text !important;
+}
+.textField div input {
+    border-radius: 10px !important;
+    background-color: rgb(249, 249, 249) !important;
+    font-family: 'VK Sans Display' !important;
+}
+.MuiFormLabel-root.Mui-focused {
+    color: rgba(0, 0, 0, 0.6) !important;
+    font-family: 'VK Sans Display' !important;
+}
+
+.products-boxTable {
+    margin-top: -23px;
+}
+.table {
+    height: 420px;
+    display: flex !important;
+    flex-direction: column;
+}
+tbody tr:last-child {
+    border-bottom: none !important;
+}
+.table-pagination {
+align-self: flex-end;
+font-family: 'VK Sans Display' !important;
+margin-top: 1px !important;
+}
+.table-header {
+    color: rgba(0, 0, 0, 0.6) !important;
+    background-color: rgb(249, 249, 249);
+    border-bottom: none !important
+}
+.table-header:first-child {
+    border-top-left-radius: 10px;
+}
+.table-header:last-child {
+    border-top-right-radius: 10px;
+}
+.table-border:last-child {
+    border-bottom: none !important;
+}
+.table-cell {
+height: 40px;
+color: rgba(0, 0, 0, 0.6) !important;
+}
+.table-row {
+    transition: all 0.3s;
+    font-weight: 700;
+    transition: all 0.15s;
+}
+.table-row:hover {
+    background-color: rgb(249, 249, 249);
+    cursor: pointer;
+}
+.cell-1 {
+width: 25px;
+margin-left: 10px;
+font-size: 16px !important;
+}
+.cell-2 {
+    width: 400px;
+    font-size: 18px !important;
+}
+@media screen and (max-width:1510px) {
+    .cell-2 {
+        width: 250px;
+    }
+}
+@media screen and (max-width:1273px) {
+    .cell-2 {
+        width: 150px;
+    }
+}
+@media screen and (max-width:1141px) {
+    .table {
+        height: 470px;
+    }
+    .cell-2 {
+        width: 120px;
+        font-size: 15px !important;
+    }
+    .table-pagination {
+        margin-bottom: 40px !important;
+    }
+
+}
+@media screen and (max-width:830px) {
+    .news-header-box {
+        justify-content: flex-end;
+    }
+    .news-header-btn {
+        width: 200px !important;
+    }
+}
+@media screen and (max-width:550px) {
+    .textField-box {
+        margin-left: 15px;
+    }
+    .table {
+        margin-left: 15px;
+    }
+    .news-header-box {
+        justify-content: end;
+    }
+    .news-header-btn {
+        width: 200px !important;
+        font-size: 14px !important;
+        margin-right: -15px !important;
+    }
+}
+@media screen and (max-width:450px)  {
+    .textField-box {
+        width: 100%;
+        margin-left: -25px;
+    }
+    .textField {
+        min-width: 175px !important;
+    }
+    .news-header-btn {
+        width: 300px !important;
+        font-size: 16px !important;
+    }
+    .products-header-btn {
+        min-width: 165px !important;
+    }
+    .boxTable {
+        width: 100%;
+    }
+    .table {
+        width: 96% !important;
+        height: 510px;
+        gap: 40px;
+        position: absolute;
+        left: -8px;
+    }
+    .table-pagination {
+        position: absolute;
+        top: 375px;
+    }
+}
+
+
+
+.cell-3 {
+   width: 135px;
+}
+.name-application {
+    font-size: 18px !important;
+}
+.table-btn {
+    width: 110px;
+    font-size: 15px !important;
+    color: rgba(0, 0, 0, 0.6) !important;
+    text-transform: none !important;
+    height: 37px;
+    transition: all 0.15s !important;
+    padding-top: 2px;
+    border-radius: 10px !important;
+}
+.table-btn:hover {
+    background-color: rgb(240, 240, 240) !important;
+}
+.modal-title {
+   color: rgba(0, 0, 0, 0.6)
+}
+.font-weight {
+    font-weight: 700 !important;
+}
+.font-main {
+    font-family: 'VK Sans Display' !important;
+    letter-spacing: 0.5px !important;
+}
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.DialogContentText {
+    color:rgba(0, 0, 0, 0.6) !important;
+}
+.modal-btn {
+    color:black;
+    font-size: 14px !important;
+    border-radius: 10px !important;
+}
+.btn-cancel {
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+.btn-cancel:hover {
+    background-color: rgb(249, 249, 249) !important
+}
+.btn-delete {
+    color: red !important;
+}
+.btn-delete:hover {
+    background-color: rgb(249, 249, 249) !important;
+}
+.table-pagination div p {
+    font-family: 'VK Sans Display';
+}
+.table-pagination div div button:active {
+    border-radius: 50% !important;
+}
+.products-pagination {
+    margin-bottom: 73px;
+}
