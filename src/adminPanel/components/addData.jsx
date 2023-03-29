@@ -43,18 +43,19 @@ const AddData = ({ data, handleCloseAdd }) => {
       </Box>
       <Box className="input-box">
         <TextField
-          className="input-title"
+          className="textField-width textField"
           id="outlined-basic"
           label="Заголовок"
-          variant="outlined"
+          variant="filled"
           inputProps={{ style: { color: "rgba(0, 0, 0, 0.6)" } }}
           value={addData.cell_2}
           onChange={(e) => handleChangeText(1, e)}
         />
         <TextField
-          className="input-content"
+          className="textField-width textField"
           id="outlined-multiline-static"
           label="Контент"
+          variant="filled"
           multiline
           rows={4}
           inputProps={{ style: { color: "rgba(0, 0, 0, 0.6)" } }}
@@ -62,7 +63,7 @@ const AddData = ({ data, handleCloseAdd }) => {
           onChange={(e) => handleChangeText(2, e)}
         />
 
-        <label htmlFor="file-upload">
+        <label htmlFor="file-upload" className="file-label">
           <input
             id="file-upload"
             type="file"

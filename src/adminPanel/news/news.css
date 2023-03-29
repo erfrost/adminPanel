@@ -37,7 +37,6 @@
 }
 .products-header-btn:hover {
     background-color: rgba(78, 54, 226, 0.87) !important;
-    color: white !important;
 }
 .textField-box {
     display: flex;
@@ -116,7 +115,6 @@ color: rgba(0, 0, 0, 0.6) !important;
 }
 .table-row:hover {
     background-color: rgb(249, 249, 249);
-    cursor: pointer;
 }
 .cell-1 {
 width: 25px;
@@ -244,6 +242,7 @@ font-size: 16px !important;
 }
 .DialogContentText {
     color:rgba(0, 0, 0, 0.6) !important;
+    font-family: 'VK Sans Display' !important;
 }
 .modal-btn {
     color:black;

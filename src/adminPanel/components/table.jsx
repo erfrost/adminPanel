@@ -96,9 +96,7 @@ const TableComponent = ({
     const text = e.target.value;
     setTextField(text);
   };
-  const handleClickRow = (rowId) => {
-    console.log(rowId);
-  };
+  const handleClickRow = (rowId) => {};
 
   return (
     <>
@@ -178,58 +176,56 @@ const TableComponent = ({
                 </TableHead>
                 <TableBody>
                   {data.slice(startIndex, endIndex).map((n) => (
-                    <>
-                      <TableRow
-                        className="table-row table-border row-hover"
-                        key={title === "ЗАЯВКИ" ? n.id : n.cell_1}
-                        onClick={() =>
-                          handleClickRow(title === "ЗАЯВКИ" ? n.id : n.cell_1)
+                    <TableRow
+                      className="table-row table-border row-hover"
+                      key={title === "ЗАЯВКИ" ? n.id : n.cell_1}
+                      onClick={() =>
+                        handleClickRow(title === "ЗАЯВКИ" ? n.id : n.cell_1)
+                      }
+                    >
+                      <TableCell
+                        align="center"
+                        className="font-main table-cell cell-1 font-weight"
+                      >
+                        {n.cell_1}
+                      </TableCell>
+
+                      <TableCell
+                        align="left"
+                        className="font-main table-cell cell-2"
+                      >
+                        {n.cell_2.length <= 25
+                          ? n.cell_2
+                          : n.cell_2.slice(0, 24) + "..."}
+                      </TableCell>
+                      <TableCell
+                        align="center"
+                        className={
+                          title === "ЗАЯВКИ"
+                            ? "font-main table-cell cell-3 name-application"
+                            : "font-main table-cell cell-3"
                         }
                       >
-                        <TableCell
-                          align="center"
-                          className="font-main table-cell cell-1 font-weight"
-                        >
-                          {n.cell_1}
-                        </TableCell>
-
-                        <TableCell
-                          align="left"
-                          className="font-main table-cell cell-2"
-                        >
-                          {n.cell_2.length <= 25
-                            ? n.cell_2
-                            : n.cell_2.slice(0, 24) + "..."}
-                        </TableCell>
-                        <TableCell
-                          align="center"
-                          className={
-                            title === "ЗАЯВКИ"
-                              ? "font-main table-cell cell-3 name-application"
-                              : "font-main table-cell cell-3"
-                          }
-                        >
-                          {title === "ЗАЯВКИ" ? (
-                            n.cell_3
-                          ) : (
-                            <Buttons
-                              id={title === "ЗАЯВКИ" ? n.id : n.cell_1}
-                              handleDelete={() =>
-                                handleDelete(
-                                  setData,
-                                  title === "ЗАЯВКИ" ? n.id : n.cell_1
-                                )
-                              }
-                              handleOpenChange={() =>
-                                handleOpenChange(
-                                  title === "ЗАЯВКИ" ? n.id : n.cell_1
-                                )
-                              }
-                            />
-                          )}
-                        </TableCell>
-                      </TableRow>
-                    </>
+                        {title === "ЗАЯВКИ" ? (
+                          n.cell_3
+                        ) : (
+                          <Buttons
+                            id={title === "ЗАЯВКИ" ? n.id : n.cell_1}
+                            handleDelete={() =>
+                              handleDelete(
+                                setData,
+                                title === "ЗАЯВКИ" ? n.id : n.cell_1
+                              )
+                            }
+                            handleOpenChange={() =>
+                              handleOpenChange(
+                                title === "ЗАЯВКИ" ? n.id : n.cell_1
+                              )
+                            }
+                          />
+                        )}
+                      </TableCell>
+                    </TableRow>
                   ))}
                 </TableBody>
               </Table>

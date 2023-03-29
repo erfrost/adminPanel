@@ -47,7 +47,7 @@ export default function Buttons({ id, handleOpenChange, handleDelete }) {
       >
         <Box className="modal-content">
           <DialogTitle className="font-main modal-title">
-            {"Вы уверены что хотите удалить новость?"}
+            Вы уверены что хотите удалить новость?
           </DialogTitle>
           <DialogContent>
             <DialogContentText
