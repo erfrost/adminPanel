@@ -86,10 +86,13 @@ tbody tr:last-child {
     border-bottom: none !important;
 }
 .table-pagination {
-align-self: flex-end;
-font-family: 'VK Sans Display' !important;
-margin-top: 1px !important;
-transition: all 0.25s;
+    align-self: flex-end;
+    font-family: 'VK Sans Display' !important;
+    margin-top: 1px !important;
+    transition: all 0.25s;
+}
+.table-pagination div div button {
+    transition: all 0.25s;
 }
 .table-pagination div div button:hover {
     background-color: rgba(78, 54, 226, 0.6) !important;
@@ -99,7 +102,15 @@ transition: all 0.25s;
     background-color: rgba(78, 54, 226, 0.87) !important;
     color: white !important;
     border-radius: 50% !important;
-    
+}
+.table-pagination div p {
+    font-family: 'VK Sans Display';
+}
+.table-pagination div div button span {
+    display: none !important;
+}
+.products-pagination {
+    margin-bottom: 73px;
 }
 .table-header {
     color: rgba(0, 0, 0, 0.6) !important;
@@ -242,6 +253,25 @@ font-size: 16px !important;
     background-color: rgba(78, 54, 226, 0.87) !important;
     color: white !important;
 }
+.table-btn span {
+    display: none !important;
+}
+.btn-1 {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.btn-1:active {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.btn-2 {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+.btn-2:active {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
 .modal-title {
    color: rgba(0, 0, 0, 0.6)
 }
@@ -278,13 +308,4 @@ font-size: 16px !important;
 }
 .btn-delete:hover {
     background-color: rgb(249, 249, 249) !important;
-}
-.table-pagination div p {
-    font-family: 'VK Sans Display';
-}
-.table-pagination div div button:active {
-    border-radius: 50% !important;
-}
-.products-pagination {
-    margin-bottom: 73px;
 }

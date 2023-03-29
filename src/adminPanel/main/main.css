@@ -155,6 +155,7 @@
     line-height: 24px;
     justify-content: left !important;
     font-family: 'VK Sans Display' !important;
+    transition: all 0.25s;
   }
   .button:hover {
     background-color: rgb(249, 249, 249) !important;
