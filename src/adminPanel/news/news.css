@@ -89,6 +89,17 @@ tbody tr:last-child {
 align-self: flex-end;
 font-family: 'VK Sans Display' !important;
 margin-top: 1px !important;
+transition: all 0.25s;
+}
+.table-pagination div div button:hover {
+    background-color: rgba(78, 54, 226, 0.6) !important;
+    color: white !important;
+}
+.table-pagination div div button:active {
+    background-color: rgba(78, 54, 226, 0.87) !important;
+    color: white !important;
+    border-radius: 50% !important;
+    
 }
 .table-header {
     color: rgba(0, 0, 0, 0.6) !important;
@@ -154,22 +165,27 @@ font-size: 16px !important;
     }
     .news-header-btn {
         width: 200px !important;
+        font-size: 14px !important;
     }
 }
 @media screen and (max-width:550px) {
     .textField-box {
-        margin-left: 15px;
+       
     }
     .table {
-        margin-left: 15px;
+
     }
     .news-header-box {
         justify-content: end;
+        margin-right: 15px;
     }
     .news-header-btn {
         width: 200px !important;
         font-size: 14px !important;
         margin-right: -15px !important;
+    }
+    .products-header-btn {
+        font-size: 12px !important;
     }
 }
 @media screen and (max-width:450px)  {
@@ -195,16 +211,13 @@ font-size: 16px !important;
         height: 510px;
         gap: 40px;
         position: absolute;
-        left: -8px;
+        left: 9px;
     }
     .table-pagination {
         position: absolute;
         top: 375px;
     }
 }
-
-
-
 .cell-3 {
    width: 135px;
 }
@@ -217,12 +230,17 @@ font-size: 16px !important;
     color: rgba(0, 0, 0, 0.6) !important;
     text-transform: none !important;
     height: 37px;
-    transition: all 0.15s !important;
     padding-top: 2px;
     border-radius: 10px !important;
+    transition: all 0.25s !important;
 }
 .table-btn:hover {
-    background-color: rgb(240, 240, 240) !important;
+    background-color: rgba(78, 54, 226, 0.6) !important;
+    color: white !important;
+}
+.table-btn:active {
+    background-color: rgba(78, 54, 226, 0.87) !important;
+    color: white !important;
 }
 .modal-title {
    color: rgba(0, 0, 0, 0.6)

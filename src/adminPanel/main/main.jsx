@@ -125,7 +125,7 @@ const Main = () => {
               {navigation.map((nav) => {
                 return (
                   <Button
-                    className="button links-text"
+                    className="button"
                     key={nav}
                     onClick={() => handleSwitchPage(nav)}
                   >
